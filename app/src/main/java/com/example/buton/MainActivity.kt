@@ -1,7 +1,6 @@
 package com.example.buton
 
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -11,11 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         bottomNavigationView.background = null
-        miMap.setOnClickListener({startActivity(Intent(this, Harta_1::class.java)) })
-
-
-
-
-
+        bottomNavigationView.menu.getItem (1).isEnabled=false
+//        bottomNavigationView.menu.getItem (0).setOnMenuItemClickListener({startActivity(Intent(this, Harta_1::class.java)) }
     }
 }
