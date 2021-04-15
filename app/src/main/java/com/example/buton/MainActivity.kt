@@ -12,37 +12,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         bottomNavigationView.background = null
         bottomNavigationView.menu.getItem (1).isEnabled=false
-
-
-
-//        bottomNavigationView.setOnNavigationItemSelectedListener{
-//            when (it.itemId){
-//                R.id.miMap -> startActivity(Intent(Harta_1))
-//                R.id.miMap-> setOnClickListener({startActivity(Intent(this, Harta_1::class.java)) })
-//                else ->  startActivity(MainActivity)
-//            }
-//            true
-//        }
-
-
-
-//        class CustomViewHolder(val view: View): RecyclerView.ViewHolder (view){
-//             init{
-//                  view.setOnClickListener{
-//                      val intent =Intent(view.context, Harta_1:class.java)
-//                      view.context.startActivity(intent)
-//                  }
-//             }
-//        }
-
-
         miMap.setOnClickListener({startActivity(Intent(this, Harta_1::class.java)) })
-//        bottomNavigationView.menu.getItem(0).setOnMenuItemClickListener({startActivity(Intent(this, Harta_1::class.java))})
+        button2.setOnClickListener({startActivity(Intent(this, ScrollingActivity_2::class.java)) })
 
 
-//        @Override
-//        public boolean onOptionsItemSelected()
-//        bottomNavigationView.menu.getItem (0).setOnClickListener
-//        setOnClickListener({startActivity(Intent(this, Harta_1::class.java)) }
+
     }
 }
